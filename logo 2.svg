@@ -1,0 +1,27 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75000 30000" width="250" height="100">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #3cffd2;stroke: #000000;stroke-miterlimit:0 } 
+		.s1 { fill: #000000;stroke: #3cffd2;stroke-miterlimit:0 } 
+		.s2 { fill: #10e8ff;stroke: #000000;stroke-miterlimit:0 } 
+		.t3 { font-size: 65px;fill: #000000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t4 { font-size: 65px;fill: #000000;font-weight: 400;font-family: "Roboto-Regular", "Roboto" } 
+		.t5 { font-size: 65px;fill: #60ffad;font-weight: 400;font-family: "Roboto-Regular", "Roboto" } 
+	</style>
+	<g id="Layer 1">
+		<path id="Shape 1" fill-rule="evenodd" class="s0" d="m57264.8 17132c-11725.6 10826.3-7541.6-18397.6-984.9-5543.3 2604 5105.2-4872.8-4873 4356.7 3535.2"/>
+		<path id="Shape 2" fill-rule="evenodd" class="s1" d="m50644.4 15389.2c-5188.7-5478.4-1958.4 11013.6 9415.9 804.5 4691.8-4211.2-12634.7 5910.2-7404.3-4245.1 6368.3-12364.3 11785.2 11742.6-1732.1 3769.6"/>
+		<path id="Shape 3" fill-rule="evenodd" class="s2" d="m56824 17211.2c-1683.7-1004.9 117.4 6932.7-6219.4-1951"/>
+		<text id="" style="transform: matrix(1,0,0,1,18936.1,14303)" >
+		</text>
+		<text id="TEXT\" style="transform: matrix(1,0,0,1,17691,9188.475)" >
+			<tspan x="0" y="0" class="t3">a</tspan><tspan  y="0" class="t3">s
+</tspan>
+		</text>
+		<text id="Wellspring  Corp. " style="transform: matrix(82.418,.473,-0.473,82.418,6020.354,15779.632)" >
+			<tspan x="0" y="0" class="t4">W</tspan><tspan  y="0" class="t4">e</tspan><tspan  y="0" class="t4">l</tspan><tspan  y="0" class="t4">l</tspan><tspan  y="0" class="t4">s</tspan><tspan  y="0" class="t4">p</tspan><tspan  y="0" class="t4">r</tspan><tspan  y="0" class="t4">i</tspan><tspan  y="0" class="t4">n</tspan><tspan  y="0" class="t4">g</tspan><tspan  y="0" class="t5"> </tspan><tspan  y="0" class="t5"> </tspan><tspan  y="0" class="t5">C</tspan><tspan  y="0" class="t5">o</tspan><tspan  y="0" class="t5">r</tspan><tspan  y="0" class="t5">p</tspan><tspan  y="0" class="t4">.</tspan><tspan  y="0" class="t5">
+</tspan>
+		</text>
+	</g>
+</svg>
