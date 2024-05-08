@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="styles.css">
    <script src="script.js" defer></script>
     <title>Wellspring Corp - A better tomorrow!</title>
-    <link rel="icon" type="image/x-icon" href="WS 16x16.ico">
-    <link rel="shortcut icon" href="Logo Wellspring 30x30.png">
+    <link rel="icon" type="image/x-icon" href="WS_16x16.ico">
+    <link rel="shortcut icon" href="Logo_Wellspring 30x30.png">
 
 </head>
+    <body>
+        <div class="container">
 
 <header> 
-    <img id="logo" src="Logo Wellspring 175x70.svg" alt="Wellspring Logotype">
+    <img id="logo" src="Logo_Wellspring_175x70.svg" alt="Wellspring Logotype">
          <!-- Menu button -->
 
         <button class="menu-bttn-open" id="open-menu">
@@ -60,14 +62,23 @@
 
 
 
-<body>
+
    
     <!-- Content-->
-   <picture> <source type="image/jpg" media="(min-width:1521px)" srcset="wellspring 1920x685.jpg">
-    <source type="image/jpg" media="(min-width:801px)" srcset="wellspring 1024x615.jpg">
-    <source type="image/jpg" media="(max-width:800px)" srcset="wellspring 800x585.jpg">
-    <img src="wellspring 800x585.jpg" alt="Picture of nice brick facade">
+   <picture id="landing"> <source type="image/jpg" media="(min-width:1221px)" srcset="WS_new_1920x685.jpg">
+    <source type="image/jpg" media="(min-width:800px) " srcset="WS_new_1024x615.jpg">
+    <source type="image/jpg" media="(max-width:800px)" srcset="WS_new_1920x685.jpg">
+    <img id="little" src="wellspring_800x585.jpg" alt="Picture of nice concrete facade">
      </picture>
    
+
+        <h2>Senaste Produkterna</h2>
+        <div id="product-images"> 
+       
+       <img  src="frilaggning01.png"> 
+       <img src="frilaggning02.png">
+       <img src="frilaggning03.png">
+        </div>
 </body>
+</div>
 </html>
