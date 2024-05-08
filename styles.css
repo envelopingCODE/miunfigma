@@ -1,14 +1,28 @@
-
+@font-face {
+    font-family: 'Roboto';
+    src: url('Fonts/roboto-latin-700-normal.ttf') format('truetype');
+         font-weight: bold;
+    font-style: normal;
+}
+  
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   background-color:rgb(255, 255, 255); 
 
-  font-family: "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   overflow: auto;
 }
 
+h2 { 
+    color: #E75A7C;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 36px;
+  font-weight: 700;
+}
 header { 
     position: fixed; 
     width: 100%;
@@ -159,6 +173,7 @@ nav ul {
     display: flex;
     flex-direction: column;
    justify-content: center;
+   margin:0%;
 
 
 }
