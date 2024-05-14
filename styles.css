@@ -9,10 +9,10 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color:rgb(255, 255, 255); 
+  background-color:#f2f5ea; 
 
   font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  overflow: auto;
+  overflow:auto;
 }
 
 h2 { 
@@ -175,6 +175,7 @@ nav ul {
     display: flex;
     flex-direction: column;
    justify-content: center;
+   align-items: center;
    margin:0%;
 
 
@@ -224,21 +225,26 @@ a {
     transition: color 0.3s; /* Add a smooth transition for color change */
 }
 
-#landing {
 
-    max-width: 100%;
-    min-width: 100vw;
-    display: flex;
-    justify-self:center;
-    margin-bottom: 85px;
-  
-    
-}
 
 #little {
-    display: flex;
-    justify-self: center;
-    justify-items: center;
+    display: block;
+    margin: 0 auto;
+    width: 100vw; /* Ensures the image fills its container */
+    height: 260px; /* Phone:260, tablet:455px, standard screen:470px  */ 
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position:57%; /* Positions the visible portion of the image to the center */
+    max-width: 1920px;
+}
+
+#landing {
+    max-width: 1920px;
+    width: auto ; /* Ensure the image scales with its container */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 85px;
+    
 }
 
 #banner {
@@ -256,6 +262,16 @@ a {
         flex-direction: row;
          align-items: center;
          justify-content: center;
+    }
+
+    #little {
+        display: block;
+        margin: 0 auto;
+        width: 100vw; /* Ensures the image fills its container */
+        height: 455px; /* Phone:260, tablet:455px, standard screen:470px  */ 
+        object-fit: cover; /* Ensures the image covers the entire container */
+        object-position:57%; /* Positions the visible portion of the image to the center */
+        max-width: 1920px;
     }
         
          #banner {
@@ -281,6 +297,16 @@ a {
        max-width: 1400px;
        margin: 0 auto; 
        
+    }
+
+    #little {
+        display: block;
+        margin: 0 auto;
+        width: 100vw; /* Ensures the image fills its container */
+        height: 470px; /* Phone:260, tablet:455px, standard screen:470px  */ 
+        object-fit: cover; /* Ensures the image covers the entire container */
+        object-position:57%; /* Positions the visible portion of the image to the center */
+        max-width: 1920px;
     }
 
     #banner {
