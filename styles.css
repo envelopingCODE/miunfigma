@@ -9,7 +9,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color:#f2f5ea; 
+  background-color:#040213d2; 
 
   font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   overflow:auto;
@@ -26,7 +26,7 @@ h2 {
 header { 
     position: fixed; 
     width: 100%;
-     max-width:1920px;
+     max-width:2000px;
     height: 55px;
     top: 0;  
     background-color:#bbc7a4;
@@ -40,8 +40,9 @@ header {
 
     width: 100%;
     opacity: 100%;
-    max-width: 1920px;
-    margin: auto
+    max-width: 2000px;
+    margin: auto;
+    background-color:#f2f5ea; 
     
 }
 
@@ -234,11 +235,11 @@ a {
     height: 260px; /* Phone:260, tablet:455px, standard screen:470px  */ 
     object-fit: cover; /* Ensures the image covers the entire container */
     object-position:57%; /* Positions the visible portion of the image to the center */
-    max-width: 1920px;
+    max-width: 2000px;
 }
 
 #landing {
-    max-width: 1920px;
+    max-width: 2000px;
     width: auto ; /* Ensure the image scales with its container */
     height: auto; /* Ensure the image maintains its aspect ratio */
     display: block;
@@ -250,10 +251,91 @@ a {
 #banner {
     background-image: url(background.jpg);
     background-position: 60% 50%;
-    background-size: cover;
-    min-height: 270px;
+    background-size: 200%;
+    min-height: 325px;
     margin-top: 90px;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content:center;
+     align-items: center;
+     color: #f2f5ea;
+    text-align: center;
+    
+    
+    
+
 }
+
+#banner::after {
+content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#bbc7a4b8;
+}
+
+.textBanner {
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1),
+               2px 2px 4px rgba(0, 0, 0, 0.1),
+               3px 3px 6px rgba(0, 0, 0, 0.1),
+               4px 4px 8px rgba(0, 0, 0, 0.1);
+    
+    opacity: 100%;
+    position: relative;
+    z-index: 100;
+    font-family: 'Roboto' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin:1em;
+    margin-bottom: 0;
+    line-height: 1.5;    
+    
+    
+}
+
+#searchButton {
+   background-color: transparent; /* Remove background color */
+    display: flex;
+    z-index: 100;
+    margin: 40px;
+    max-height: 100px;
+    padding:10px 20px ;
+    max-width: 150px;
+    min-width: 100px;
+    border: white solid 3px;
+    cursor: pointer;
+  
+
+}
+#searchButton:hover {
+background-color: #bbc7a4;
+opacity: 100%;
+}
+
+
+
+#searchMenu-text {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    padding: 0%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1),
+    2px 2px 4px rgba(0, 0, 0, 0.1),
+    3px 3px 6px rgba(0, 0, 0, 0.1),
+    4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#textBannerNormal {
+    display: none;
+    
+}
+
+
 
 
 @media screen and (min-width: 600px) {
@@ -271,19 +353,49 @@ a {
         height: 455px; /* Phone:260, tablet:455px, standard screen:470px  */ 
         object-fit: cover; /* Ensures the image covers the entire container */
         object-position:57%; /* Positions the visible portion of the image to the center */
-        max-width: 1920px;
+        max-width: 2000px;
     }
         
+
+    
          #banner {
-            margin-top:100px;
             background-image: url(background.jpg);
             background-position: 60% 50%;
-            background-size: cover;
-            min-height: 400px;
+            background-size: 130%;
+            min-height: 300px;
             margin-top: 90px;
+             position: relative;
+             display: flex;
+             flex-direction: column;
+             justify-content:center;
+             align-items: center;
+             color: #f2f5ea;
+            text-align: center;
         
         }
 
+
+        #textBannerSmall {
+            display: none;
+        }
+    
+        
+        #textBannerNormal {
+            display:flex;
+            margin: auto;
+            line-height: 2;
+            margin: auto 0;
+            font-size: 32px;
+            margin-top: 60px;
+            margin-bottom: 0px;
+        }
+
+        #searchMenu-text {
+            font-size: 32px;
+        }
+
+        #searchButton {
+        max-width:250px;
     }
 
 
@@ -306,15 +418,15 @@ a {
         height: 470px; /* Phone:260, tablet:455px, standard screen:470px  */ 
         object-fit: cover; /* Ensures the image covers the entire container */
         object-position:57%; /* Positions the visible portion of the image to the center */
-        max-width: 1920px;
+        max-width: 2000px;
     }
 
     #banner {
         background-image: url(background.jpg);
-        background-position: 60% 50%;
-        background-size: cover;
-        min-height: 600px;
-        max-width: 1510px;
+        background-position: 66% 10%;
+        background-size: 100%;
+        min-height: 470px;
+        max-width: 1610px;
         display: flex;
         margin: 0 auto; /* Center horizontally */
         display: flex;
@@ -324,6 +436,31 @@ a {
 
 }
 
+#textBannerSmall {
+    display: none;
+}
+
+#textBannerNormal {
+    display:flex;
+    margin: auto;
+    line-height: 2;
+    margin: auto 0;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+
+#searchMenu-text {
+    font-size: 32px;
+}
+
+#searchButton {
+max-width:250px;
+margin-top: 25px;
+}
+
+}
 
 /* media queries tablet 
 
