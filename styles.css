@@ -1,7 +1,28 @@
 @font-face {
     font-family: 'Roboto';
     src: url('Fonts/roboto-latin-700-normal.ttf') format('truetype');
-         font-weight: bold;
+         font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Fonts/roboto-latin-300-normal.ttf') format('truetype');
+         font-weight:300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Fonts/roboto-latin-400-normal.ttf') format('truetype');
+         font-weight:400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Fonts/roboto-latin-500-normal.ttf') format('truetype');
+         font-weight:500;
     font-style: normal;
 }
   
@@ -34,8 +55,9 @@ h2 {
     color: #E75A7C;
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 48px;
-    font-size: 26px;
+    font-size: 36px;
   font-weight: 700;
  
 }
@@ -351,21 +373,101 @@ opacity: 100%;
     
 }
 
+#portrait {
+    display: flex;
+    max-width: 220px;
+    max-height: 220px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    align-items: center;
+
+}
+
+#portrait-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+   
+    
+   }
+
+
 .images-container {
  display: flex;
  flex-direction: column;
  justify-content: center; /* Center vertically */
  align-items: center; /* Center horizontally */
+
  
 }
 
-.pics-before, .pics-before img, .pics-after, .pics-after img, .pics-before-colorizing, .pics-after-colorizing,
-.pics-before-colorizing img, .pics-after-colorizing img {
+.pics-before, 
+.pics-before img, 
+.pics-after, 
+.pics-after img, 
+.pics-before-colorizing, 
+.pics-after-colorizing,
+.pics-before-colorizing img,
+ .pics-after-colorizing img {
    width: 84%;
-   margin: 6px;
+   margin: 0; /* Reset margin */
+   margin-top: 6px; /* Add top margin as needed */
+   margin-left: 5%;
+   padding: 0; /* Reset padding */
+   border: none; /* Remove border if any */
+   box-sizing: border-box; /* Ensure width includes padding and border */
+
+}
    
 
- }
+   
+#textBio {
+    font-size: 32px;
+    font-family: 'Roboto';
+   
+}  
+
+.textbio-p {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin: auto;
+    margin-bottom: 100px;
+    
+}
+
+#advert {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     scale: 0.48;
+    
+}
+
+
+footer {
+    margin-top: 49px;
+    padding: 1%;
+    background-color:#bbc7a4;
+    color: white;
+    margin: auto;
+    padding-left: 5%;
+    max-width: 2000px;
+    border: 0%;
+}
+
+
  
  
 
@@ -430,6 +532,29 @@ opacity: 100%;
 
         #searchButton {
         max-width:250px;
+        }
+        
+#portrait {
+    display: flex;
+    max-width: 450px;
+    max-height: 450px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    align-items: center;
+
+}
+
+#advert {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     scale: 1;
+    
+}
+
     }
 
 
@@ -492,6 +617,42 @@ opacity: 100%;
 #searchButton {
 max-width:250px;
 margin-top: 25px;
+}
+
+#info-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    align-items: center;
+    margin: auto;
+}
+
+#portrait {
+    display: flex;
+    max-width: 600px;
+    max-height: 600px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    align-items: center;
+
+
+    }
+
+.textbio-p {
+    max-width: 800px;
+}
+
+#advert {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     scale: 1;
+    
 }
 
 }
