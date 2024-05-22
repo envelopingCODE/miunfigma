@@ -74,6 +74,10 @@ header {
     justify-content: space-between; }
 
     
+/* Widescreen navigation */
+#widescreen-nav {
+    display: none;
+}
 .container {
 
     width: 100%;
@@ -178,7 +182,7 @@ color: black;
     
   
 
-nav {
+  #nav-menu {
     background-color:#bbc7a4;
     box-shadow: 0 0px 10px black;
  
@@ -289,9 +293,11 @@ a {
 #banner {
     background-image: url(background.jpg);
     background-position: 60% 50%;
-    background-size: 200%;
+    background-size: 230%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+
     min-height: 325px;
-    margin-top: 90px;
+    margin-top: 0px;
      position: relative;
      display: flex;
      flex-direction: column;
@@ -445,8 +451,6 @@ opacity: 100%;
 }
 
 #advert {
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
      align-items: center;
@@ -464,7 +468,7 @@ footer {
     margin: auto;
     padding-left: 5%;
     max-width: 2000px;
-    border: 0%;
+    border: 0;
 }
 
 
@@ -561,13 +565,59 @@ footer {
 
 
 @media screen and (min-width: 1521px) {
+
+    header { 
+        position: fixed; 
+        width: 100%;
+         max-width:2000px;
+        height: 75px;
+        top: 0;  
+        background-color:#bbc7a4;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        z-index: 1000; 
+        display: flex; 
+        justify-content: space-between; }
+
+        #mobile-menu {
+            display: none;
+        }
+
+        #widescreen-nav {
+            display: block; /* Show nav for wider screens */
+            flex-grow: 1; /* Allow it to grow and fill space */
+        }
+    
+        #widescreen-nav ul {
+            display: flex; /* Use flexbox for the list */
+            justify-content: space-around; /* Evenly distribute items */
+            align-items: center; /* Align items vertically */
+            width: 100%; /* Make ul take full width */
+        }
+    
+        #widescreen-nav li {
+            padding: 0 1em; /* Add padding to list items */
+        }
+    
+        #widescreen-nav a {
+            text-decoration: none; /* Remove underline from links */
+            color: black; /* Set link color */
+            font-size: 1.2em; /* Adjust font size */
+        }
+    
+
+        
+
+        /* Styles for the hamburger menu */
+
+
+    
     #product-images { 
         display: flex;
         flex-direction: row;
        justify-content: space-around;
        max-width: 1400px;
        margin: 0 auto; 
-       
+       scale: 1.2;       
     }
 
     #little {
@@ -584,7 +634,7 @@ footer {
         background-image: url(background.jpg);
         background-position: 66% 10%;
         background-size: 100%;
-        min-height: 470px;
+        min-height: 550px;
         max-width: 1610px;
         display: flex;
         margin: 0 auto; /* Center horizontally */
@@ -656,6 +706,7 @@ margin-top: 25px;
 }
 
 }
+
 
 /* media queries tablet 
 
