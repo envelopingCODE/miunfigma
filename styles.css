@@ -589,13 +589,15 @@ footer {
     
         #widescreen-nav ul {
             display: flex; /* Use flexbox for the list */
-            justify-content: space-around; /* Evenly distribute items */
+            justify-content:right; /* Evenly distribute items */
             align-items: center; /* Align items vertically */
-            width: 100%; /* Make ul take full width */
+            width: 39%; /* Make ul take full width */
+            margin-right: 150px;
         }
     
         #widescreen-nav li {
             padding: 0 1em; /* Add padding to list items */
+            
         }
     
         #widescreen-nav a {
