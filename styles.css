@@ -477,7 +477,9 @@ footer {
     font-weight: 500;
 }
 
-
+#footerTextLarge {
+    display: none;
+}
  
  
 
@@ -491,6 +493,15 @@ footer {
          align-items: center;
          justify-content: center;
     }
+
+    #footerTextSmall {
+        display: none;
+    }
+
+    #footerTextLarge {
+        display: block;
+    }
+     
 
     #little {
         display: block;
@@ -714,6 +725,15 @@ margin-top: 25px;
      scale: 1;
     
 }
+
+#footerTextSmall {
+    display: none;
+}
+
+#footerTextLarge {
+    display: block;
+}
+ 
 
 }
 
