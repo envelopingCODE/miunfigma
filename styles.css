@@ -30,7 +30,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color:#040213d2; 
+  background-color:#f2f4e9; 
 
   font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   overflow:auto;
@@ -62,9 +62,9 @@ h2 {
  
 }
 header { 
-    position: fixed; 
-    width: 100%;
-     max-width:2000px;
+    position: fixed;
+    width: 100vw;
+    max-width:2000px;
     height: 55px;
     top: 0;  
     background-color:#bbc7a4;
